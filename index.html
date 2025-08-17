@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="left-navbar">
+          <a href="index.html" class="navbar-logo">PROJECT </a>
+          <!-- <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button> -->
+        </div>
+        <ul class="sidebar">
+          <li onclick="hideSideBar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                /></svg
+            ></a>
+          </li>
+          <li onclick="displayMessage()"><a href="#">Home</a></li>
+          <li onclick="displayMessage()"><a href="#">About</a></li>
+          <li onclick="displayMessage()"><a href="#">Services</a></li>
+          <li onclick="displayMessage()"><a href="#">Blog</a></li>
+          <li onclick="displayMessage()"><a href="#">Contact</a></li>
+        </ul>
+        <ul class="navbar-menu">
+          <li class="hideMobile"><a href="#">Home</a></li>
+          <li class="hideMobile"><a href="#">About</a></li>
+          <li class="hideMobile"><a href="#">Services</a></li>
+          <li class="hideMobile"><a href="#">Blog</a></li>
+          <li class="hideMobile"><a href="#">Contact</a></li>
+          <li class="menu-btn" onclick="showSideBar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26   "
+                height="26"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="contact-me">
+        <div class="question">
+          <h1>Are you looking for a <strong>FRONTEND</strong> Developer ?</h1>
+          <h1>
+            Looking for a fast, relaible person to BUILD <br />
+            Your <span>Website</span> in less than a week ?
+          </h1>
+          <h2>Well bother no more and CLICK that button</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 72 72"
+          >
+            <path
+              fill="#ffd3b6"
+              d="M59.9 33.9C52 27.1 47.7 16.4 46 13.1c0 0 0-.1-.1-.1c-.2-.4-.4-.7-.5-.8c-1-1.4-2.3-2.5-3.8-3.2V2.9c0-1.6-1.3-2.9-2.9-2.9H20.1c-1.6 0-2.9 1.3-2.9 2.9V11c-2.8 2.3-4.6 5.9-4.6 9.8v26.5c0 2.2 1.8 4.1 4.1 4.1c1 0 2-.4 2.7-1c0 0 .1 0 .2-.1q1.2-1.2 2.4 0c.7.7 1.7 1.1 2.8 1.1s2-.4 2.7-1c0 0 .1 0 .2-.1c.8-.8 1.6-.8 2.4-.1c.7.7 1.8 1.2 2.9 1.2s2-.4 2.7-1c0 0 .1 0 .2-.1q.45-.45.9-.6V68c0 2.2 1.8 4.1 4.1 4.1s4-1.8 4-4.1V33c1 1.2 1.9 1.6 3.2 2.9c7.2 6.9 10.7 5 12.3 3.6c1.4-1.5 1-4-.5-5.6"
+            />
+            <path
+              fill="#f2c7aa"
+              d="M25.2 8.1h12.5q2.1 0 3.9.9V7.7c0-1.2-1-2.2-2.2-2.2h-20c-1.2 0-2.2 1-2.2 2.2V11c2.2-1.8 5-2.9 8-2.9"
+            />
+          </svg>
+        </div>
+        <div class="description">
+          <h1>
+            BUILD YOUR CLEAN, COOL AND <br />
+            AMAZING WEBSITES IN HOURS
+          </h1>
+          <div class="contact-btn">
+            <a href="mailto:emmzythehacker@gmail.com" class="btn">Message</a>
+            <a href="mailto:emmzythehacker@gmail.com" class="btn">Contact</a>
+          </div>
+        </div>
+        <div class="note">
+          <p class="note-txt">
+            NOTE: <span>IF CONTACT OR MESSAGE BUTTON DOESN'T WORK</span>
+          </p>
+
+          <span>SEND A DIRECT MESSAGE TO THIS EMAIL</span>
+          <div class="email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 72 72"
+            >
+              <path
+                fill="#ffd3b6"
+                d="M68 28.1H33c1.2-1 1.6-1.9 2.9-3.2c6.9-7.2 5-10.7 3.6-12.3s-3.9-1.2-5.5.4c-7.8 9-20.5 13.2-21.8 14.4c-1.3.8-2.3 2.3-3 3.8H2.9c-1.6 0-2.9 1.3-2.9 2.9v18.6c0 1.6 1.3 2.9 2.9 2.9H11c2.3 2.8 5.9 4.6 9.8 4.6h26.5c2.2 0 4.1-1.8 4.1-4.1c0-1-.4-2-1-2.7c0 0 0-.1-.1-.2q-1.2-1.2 0-2.4c.7-.7 1.1-1.7 1.1-2.8s-.4-2-1-2.7c0 0 0-.1-.1-.2c-.8-.8-.8-1.6-.1-2.4c.7-.7 1.2-1.8 1.2-2.9s-.4-2-1-2.7c0 0 0-.1-.1-.1q-.45-.45-.6-.9H68c2.2 0 4.1-1.8 4.1-4.1c-.1-2.1-1.9-3.9-4.1-3.9"
+              />
+              <path
+                fill="#f2c7aa"
+                d="M8.1 47.6V35.2c0-1 .4-2.5 1-3.9H7.7c-1.2 0-2.2 1-2.2 2.2v20c0 1.2 1 2.2 2.2 2.2H11c-1.8-2.2-2.9-5-2.9-8.1"
+              />
+            </svg>
+            <span class="email">iamlordemmzy@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-image">
+        <img src="New Project.png" alt="" />
+        <h1>Emmzy Ikiroma</h1>
+      </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

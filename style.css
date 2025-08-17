@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  background: url(simple-website-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background: transparent;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 100rem;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 1s ease;
+  color: rgb(31, 87, 216);
+  padding: 0.3rem 1rem;
+}
+
+.navbar-logo:hover {
+  color: rgb(255, 255, 255);
+  background-color: hsla(187, 89%, 41%, 0.5);
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.3rem;
+  list-style: none;
+}
+
+.navbar-menu li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+  white-space: nowrap;
+  color: rgb(31, 87, 216);
+}
+
+.navbar-menu li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: hsla(195, 53%, 79%, 50%);
+}
+
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+}
+
+span.bar {
+  background-color: rgb(31, 87, 216);
+  display: block;
+  height: 0.2rem;
+  width: 1.3rem;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.left-navbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: scale(0.9);
+  gap: 10rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  background: transparent;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 4rem;
+}
+
+.contact-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.description h1 {
+  font-size: 2rem;
+  text-shadow: black 1px 1px 2px;
+  animation: rainbowText 10s infinite linear;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #4caf50, #008cba);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(45deg, #45a049, #0077a6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.my-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-image img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.my-image h1 {
+  padding: 0.3rem 2rem;
+  background: transparent;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  text-shadow: black 5px 5px 5px;
+  font-size: 1.5rem;
+}
+
+@keyframes rainbowText {
+  0% {
+    color: #ff0000;
+  } /* Red */
+  3.33% {
+    color: #ff7f00;
+  } /* Orange */
+  6.66% {
+    color: #ffff00;
+  } /* Yellow */
+  10% {
+    color: #7fff00;
+  } /* Chartreuse */
+  13.33% {
+    color: #00ff00;
+  } /* Green */
+  16.66% {
+    color: #00ff7f;
+  } /* Spring Green */
+  20% {
+    color: #00ffff;
+  } /* Cyan */
+  23.33% {
+    color: #007fff;
+  } /* Azure */
+  26.66% {
+    color: #0000ff;
+  } /* Blue */
+  30% {
+    color: #7f00ff;
+  } /* Violet */
+  33.33% {
+    color: #8b00ff;
+  } /* Indigo */
+  36.66% {
+    color: #ff00ff;
+  } /* Magenta */
+  40% {
+    color: #ff007f;
+  } /* Rose */
+  43.33% {
+    color: #ff1493;
+  } /* Deep Pink */
+  46.66% {
+    color: #ff4500;
+  } /* Orange Red */
+  50% {
+    color: #ffd700;
+  } /* Gold */
+  53.33% {
+    color: #adff2f;
+  } /* Green Yellow */
+  56.66% {
+    color: #40e0d0;
+  } /* Turquoise */
+  60% {
+    color: #1e90ff;
+  } /* Dodger Blue */
+  63.33% {
+    color: #6a5acd;
+  } /* Slate Blue */
+  66.66% {
+    color: #ee82ee;
+  } /* Violet */
+  70% {
+    color: #da70d6;
+  } /* Orchid */
+  73.33% {
+    color: #ff69b4;
+  } /* Hot Pink */
+  76.66% {
+    color: #ff6347;
+  } /* Tomato */
+  80% {
+    color: #ffa500;
+  } /* Orange */
+  83.33% {
+    color: #ffffe0;
+  } /* Light Yellow */
+  86.66% {
+    color: #90ee90;
+  } /* Light Green */
+  90% {
+    color: #87cefa;
+  } /* Light Sky Blue */
+  93.33% {
+    color: #d8bfd8;
+  } /* Thistle */
+  96.66% {
+    color: #ffc0cb;
+  } /* Pink */
+  100% {
+    color: #ff0000;
+  } /* Back to Red */
+}
+
+.question {
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+.question svg {
+  margin: 1rem;
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.question h1,
+.question h2 {
+  font-size: 1.2rem;
+}
+
+.question strong {
+  color: yellow;
+  font-size: 3rem;
+}
+
+.question span {
+  color: yellow;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 1);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  width: max-content;
+  padding: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  gap: 0.6rem;
+}
+
+.note-txt-two,
+.note-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+span.email {
+  font-size: 1.3rem;
+  color: rgb(26, 255, 0);
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250%; /* start hidden off screen */
+  width: 250px;
+  height: 100%;
+  gap: 1rem;
+  text-decoration: none;
+  list-style: none;
+  background: rgba(34, 34, 34, 0.7); /* semi-transparent */
+  backdrop-filter: blur(12px); /* blur the background */
+  -webkit-backdrop-filter: blur(12px); /* for Safari */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  transition: right 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  z-index: 999;
+  pointer-events: none;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5); /* shadow on the left edge */
+}
+
+.sidebar li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar li {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.5s ease;
+}
+
+@keyframes slideInBounce {
+  0% {
+    right: -250px;
+    opacity: 0;
+  }
+  60% {
+    right: 20px;
+    opacity: 1;
+  }
+  80% {
+    right: -10px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.sidebar.active {
+  animation: slideInBounce 0.6s ease-in-out forwards;
+  right: 0; /* slide into view */
+  opacity: 1; /* fade in */
+  pointer-events: auto; /* clickable */
+}
+
+.sidebar.active li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* stagger animation for list items */
+.sidebar.active li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.sidebar.active li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.sidebar.active li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.sidebar.active li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.sidebar.active li:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+.sidebar li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: hsla(68, 100%, 50%, 0.8);
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    flex-direction: column; /* stack text and image */
+    justify-content: center;
+    align-items: center;
+    height: auto; /* let content expand naturally */
+    padding: 1rem;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .contact-me {
+    width: 100%;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  span.email {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .question {
+    line-height: 1.3rem;
+  }
+
+  .question h1,
+  .question h2 {
+    font-size: 0.75rem;
+  }
+
+  .question strong {
+    color: yellow;
+    font-size: 1.7rem;
+  }
+  .description h1 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  .note {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    border-radius: 1rem;
+  }
+
+  span.email {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .question {
+    line-height: 1.5rem;
+  }
+
+  .question h1,
+  .question h2 {
+    font-size: 0.72rem;
+  }
+
+  .question strong {
+    color: yellow;
+    font-size: 1.7rem;
+  }
+  .description h1 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+  }
+
+  .note {
+    line-height: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .question {
+    line-height: 1.5rem;
+  }
+
+  .question h1,
+  .question h2 {
+    font-size: 0.7rem;
+  }
+
+  .question strong {
+    color: yellow;
+    font-size: 1.7rem;
+  }
+  .description h1 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .btn {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .question {
+    line-height: 1rem;
+  }
+
+  .question h1,
+  .question h2 {
+    font-size: 0.6rem;
+  }
+}
