@@ -109,7 +109,7 @@ span.bar {
   align-items: center;
   justify-content: center;
   color: white;
-  transform: scale(0.9);
+  transform: scale(0.8);
   gap: 10rem;
 }
 
@@ -459,6 +459,7 @@ span.email {
     padding: 1rem;
     gap: 2rem;
     width: 100%;
+    transform: scale(0.9);
   }
 
   .contact-me {
