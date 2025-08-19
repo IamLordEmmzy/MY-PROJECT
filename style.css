@@ -8,14 +8,29 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: "Hanken Grotesk", sans-serif;
-  background: url(simple-website-bg-img.jpg);
+}
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(simple-website-bg-img.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
 }
 
 .navbar {
@@ -44,7 +59,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   transition: all 1s ease;
-  color: rgb(31, 87, 216);
+  color: yellow;
   padding: 0.3rem 1rem;
 }
 
@@ -71,7 +86,7 @@ body {
   border: 2px solid transparent;
   transition: all 0.7s ease;
   white-space: nowrap;
-  color: rgb(31, 87, 216);
+  color: yellow;
 }
 
 .navbar-menu li a:hover {
@@ -103,7 +118,7 @@ span.bar {
   justify-content: center;
 }
 
-.container {
+#container {
   height: calc(100vh - 5rem);
   display: flex;
   align-items: center;
@@ -121,10 +136,10 @@ span.bar {
   padding: 2rem;
   gap: 1rem;
   background: transparent;
-  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 1);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  border-radius: 4rem;
+  border-radius: 2rem;
 }
 
 .contact-btn {
@@ -141,7 +156,7 @@ span.bar {
 .btn {
   display: inline-block;
   padding: 12px 24px;
-  background: linear-gradient(45deg, #4caf50, #008cba);
+  background: linear-gradient(45deg, #e7d916, #5b7f4d);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -150,6 +165,7 @@ span.bar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+
 .btn:hover {
   background: linear-gradient(45deg, #45a049, #0077a6);
   transform: scale(1.05);
@@ -343,7 +359,7 @@ span.bar {
 
 span.email {
   font-size: 1.3rem;
-  color: rgb(26, 255, 0);
+  color: yellow;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -445,13 +461,27 @@ span.email {
   display: none;
 }
 
+#About-me {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.about-container {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
 @media screen and (max-width: 900px) {
   body {
     background-size: cover;
     background-position: center;
   }
 
-  .container {
+  #container {
     flex-direction: column; /* stack text and image */
     justify-content: center;
     align-items: center;
